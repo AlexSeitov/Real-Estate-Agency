@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Real Estate Agency</title>
+</head>
+<body>
+
+    <!--header-->
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <a data-scroll="#mainblock" href="#">
+                        <img src="img/header/Logo.png" alt="site logo">
+                    </a>
+                </div>
+    
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a class="nav__link" data-scroll="#capabilities" href="#">how it works</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link" data-scroll="#find" href="#">find out more</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link" data-scroll="#projects" href="#">discover a project</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link" data-scroll="#community" href="#">blog</a>
+                        </li>
+                    </ul>
+
+                    
+                </nav>
+
+                <button class="header-login__btn btn" id="popup-btn" type="button">
+                    <span>Login</span>
+                </button>
+
+                <div class="popup-overlay" id="popup-overlay">
+
+                    <form class="popup" id="popup" action="#">
+                     
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Email">
+                  
+                        <label for="Password">Password</label>
+                        <input type="password" id="Password" placeholder="Password">
+                    
+                        <div class="close-popup" id="close-popup"><span>close login form</span></div>
+
+                        <div class="popup__btn-wrapper">
+                            <button class="popup__btn btn" type="submit">Log in</button>
+                            <button class="popup__btn btn" type="submit">Registration</button>
+
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </form>
+
+                </div>
+    
+                <button class="nav-toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
+
+            </div> <!--header__row-->
+        </div> <!--/container-->
+    </header> <!--/header-->
+
+    <main>
+
+        <!--mainblock-->
+
+        <section class="mainblock" id="mainblock">
+            <div class="container">
+                <div class="mainblock__wrapper">
+                    <h1 class="mainblock__title title">Real Estate Agency</h1>
+                    <h4 class="mainblock__subtitle title">Make sure your dreams are in trusted hands</h4>
+                    <a class="mainblock__btn" href="#">Become a Member</a>
+                </div>
+            </div> <!--/container-->
+        </section> <!--/mainblock-->
+
+    </main>
+
+       
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

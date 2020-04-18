@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.4;
+   
+}
+
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 992px) {
+        .container {
+            max-width: 750px; } }
+
+    @media (max-width: 767px) {
+        .container {
+            max-width: none; } }
+}
+
+
+
+p {
+    color: $gray-light;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none
+}
+
+.btn {
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    background-color: $green;
+    border-radius: 20px;
+    padding: 9px 0;
+    transition: .2s background-color linear;
+
+    &:hover {
+        background-color: $green-dark;
+    }
+
+    @media (max-width: 992px) {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
