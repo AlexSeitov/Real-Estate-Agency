@@ -26,4 +26,22 @@ $(function() {
         $(this).toggleClass("nav-toggle--active");
         $(".nav").toggleClass("nav--active");
     });
+
+    // owlcarousel
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items: 1,
+        autoplay:true,
+        autoplaySpeed: 1500,
+        autoplayTimeout:3000
+    });
+
+
+    $('.set-bg').each(function () {
+        var bg = $(this).data('setbg');
+        $(this).css('background-image', 'url(' + bg + ')');
+    });
 });

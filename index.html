@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Real Estate Agency</title>
 </head>
@@ -82,22 +84,26 @@
         <!--mainblock-->
 
         <section class="mainblock" id="mainblock">
-            <div class="container">
-                <div class="mainblock__wrapper">
-                    <h1 class="mainblock__title title">Real Estate Agency</h1>
-                    <h4 class="mainblock__subtitle title">Make sure your dreams are in trusted hands</h4>
-                    <a class="mainblock__btn" href="#">Become a Member</a>
-                </div>
-            </div> <!--/container-->
+            <div class="slider owl-carousel">
+                <div class="slider__item set-bg" data-setbg="img/mainblock/mainblock-bg.jpg"></div>
+                <div class="slider__item set-bg" data-setbg="img/mainblock/mainblock-bg-1.jpg"></div>
+                <div class="slider__item set-bg" data-setbg="img/mainblock/mainblock-bg-2.jpg"></div>
+                <div class="slider__item set-bg" data-setbg="img/mainblock/mainblock-bg-3.jpg"></div>
+                <div class="slider__item set-bg" data-setbg="img/mainblock/mainblock-bg-4.jpg"></div>
+            </div>
+
+            <div class="mainblock__title-wrapper container">
+                <h1 class="mainblock__title title">Real Estate Agency</h1>
+                <h4 class="mainblock__subtitle title">Make sure your dreams are in trusted hands</h4>
+                <a class="mainblock__btn" href="#">Become a Member</a>
+            </div>  
         </section> <!--/mainblock-->
 
     </main>
 
-       
-
-
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
