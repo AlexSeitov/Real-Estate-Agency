@@ -668,15 +668,27 @@ button {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  .tabs-item {
+    top: -6px;
+  }
+}
+
 .tabs-item.active::after {
   content: "";
   display: block;
-  width: 175px;
+  width: 100%;
   height: 1px;
   position: absolute;
   bottom: -1px;
   background-color: #99c50a;
   z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .tabs-item.active::after {
+    bottom: -7px;
+  }
 }
 
 .tabs-item.active .tabs-item__number {
@@ -708,6 +720,7 @@ button {
 @media (max-width: 576px) {
   .tabs-item__number {
     display: block;
+    margin-right: 0;
   }
 }
 
