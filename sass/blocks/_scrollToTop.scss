@@ -1,0 +1,38 @@
+.scroll-to-top {
+    position: fixed;
+    top: 84vh;
+    right: 40px;
+    display: none;
+    width: 56px; 
+    height: 56px;
+    font-size: 0;
+    text-align:center; 
+    color: #444;
+    background-color: rgba(0, 0, 0, .07);
+    border: 1px solid $scrollToTop;
+    padding-top: 20px;
+    z-index: 1000;
+    animation: upAndDown 1s ease-out alternate infinite;
+
+    @media (max-width: 576px) {
+        display: none !important;
+    }
+}
+
+.scroll-arrow {
+    display: inline-block;
+    border: solid $green;
+    border-width: 0 3px 3px 0;
+    padding: 12px;
+    transform: rotate(-135deg);
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}

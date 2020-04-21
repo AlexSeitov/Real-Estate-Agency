@@ -61,16 +61,16 @@ $(function() {
     // scrollToTop
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 600) {
-            $('.scrollToTop').fadeIn();
+        if ($(this).scrollTop() > 570) {
+            $('.scroll-to-top').fadeIn();
         } else {
-            $('.scrollToTop').fadeOut();
+            $('.scroll-to-top').fadeOut();
         }
     });
 
-    $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-    });
-    
+    $('.scroll-to-top').on('click', function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({scrollTop:0}, '300');
+      });
 });
