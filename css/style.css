@@ -1257,4 +1257,36 @@ button {
   font-size: 16px;
   color: #414141;
 }
+
+.clients {
+  padding: 35px 0;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients__item {
+  padding: 15px;
+}
+
+@media (max-width: 576px) {
+  .clients__item {
+    width: 50%;
+  }
+}
+
+.clients__item img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

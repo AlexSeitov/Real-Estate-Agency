@@ -1,0 +1,22 @@
+.clients {
+    padding: 35px 0;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    padding: 15px;
+
+    @media (max-width: 576px) {
+        width: 50%;
+    }
+}
+
+.clients__item img {
+   max-width: 100%; 
+}
