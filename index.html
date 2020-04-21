@@ -22,7 +22,7 @@
                     </a>
                 </div>
     
-                <nav class="nav" id="nav">
+                <nav class="nav">
                     <ul class="nav__list">
 
                         <li class="nav__item">
@@ -102,10 +102,10 @@
 
         <!--capabilities-->
 
-        <section class="capabilities">
+        <section class="capabilities" id="capabilities">
             <div class="container">
                 <div class="capabilities-header">
-                    <img class="capabilities-header__img" src="img/icon/capabilities.png" alt="" />
+                    <img class="capabilities-header__img" src="img/icon/capabilities.png" alt="icon" />
 
                     <h2 class="capabilities-header__title title">Our work is the presentation of our capabilities</h2>
 
@@ -137,7 +137,7 @@
                             <div class="tabs__body">
                                 <div id="tab_01" class="tabs__block">
                                     <div class="tabs__img">
-                                        <img src="img/icon/tabs-icon-1.png" alt="" />
+                                        <img src="img/icon/tabs-icon-1.png" alt="icon" />
                                     </div>
 
                                     <div class="tabs-text__wrap">
@@ -148,7 +148,7 @@
 
                                 <div id="tab_02" class="tabs__block">
                                     <div class="tabs__img">
-                                        <img src="img/icon/tabs-icon-2.png" alt="" />
+                                        <img src="img/icon/tabs-icon-2.png" alt="icon" />
                                     </div>
 
                                     <div class="tabs-text__wrap">
@@ -159,7 +159,7 @@
 
                                 <div id="tab_03" class="tabs__block">
                                     <div class="tabs__img">
-                                        <img src="img/icon/tabs-icon-3.png" alt="" />
+                                        <img src="img/icon/tabs-icon-3.png" alt="icon" />
                                     </div>
 
                                     <div class="tabs-text__wrap">
@@ -169,19 +169,21 @@
                                 </div>
                             </div>
                         </div>
+                    </div> <!--/content-->
                 </div> <!--/capatilities-tabs-->
             </div> <!--/container-->
+
         </section> <!--/capabilities-->
 
 
         <!--find-->
 
-        <section class="find">
+        <section class="find" id="find">
             <div class="container">
                 <div class="find__wrapper">
                     <div class="find-item">
                         <div class="find-item__img">
-                            <img src="img/find/find-1.png" alt="" />
+                            <img src="img/find/find-1.png" alt="icon" />
                         </div>
 
                         <div class="find-item__block">
@@ -195,7 +197,7 @@
 
                     <div class="find-item">
                         <div class="find-item__img">
-                            <img src="img/find/find-2.png" alt="" />
+                            <img src="img/find/find-2.png" alt="icon" />
                         </div>
 
                         <div class="find-item__block">
@@ -203,7 +205,7 @@
                             <p class="find-item__text">
                                 Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.
                             </p>
-                            <a class="find-item__btn btn" href="#">Submit Your Project</a>
+                            <a class="find-item__btn btn btn--green" href="#">Submit Your Project</a>
                         </div>
                     </div>
                 </div> <!--/find__wrapper-->
@@ -212,7 +214,7 @@
 
 
         <!--projects-->
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <div class="projects-header">
                     <div class="projects-header__column">
@@ -228,7 +230,7 @@
                     <div class="projects-content__item">
                         <div class="projects-content__img">
                             <a href="#">
-                                <img src="img/projects/projects-1.jpg" alt="" />
+                                <img src="img/projects/projects-1.jpg" alt="buildings" />
                             </a>
 
                             <div class="projects-content__btn">
@@ -253,7 +255,7 @@
                     <div class="projects-content__item">
                         <div class="projects-content__img">
                             <a href="#">
-                                <img src="img/projects/projects-2.jpg" alt="" />
+                                <img src="img/projects/projects-2.jpg" alt="buildings" />
                             </a>
 
                             <div class="projects-content__btn">
@@ -278,7 +280,7 @@
                     <div class="projects-content__item">
                         <div class="projects-content__img">
                             <a href="#">
-                                <img src="img/projects/projects-3.jpg" alt="" />
+                                <img src="img/projects/projects-3.jpg" alt="buildings" />
                             </a>
 
                             <div class="projects-content__btn">
@@ -307,7 +309,7 @@
 
         <!--community-->
 
-        <section class="community">
+        <section class="community" id="community">
             <div class="community__wrapper container">
                 <div class="community-header">
                     <h2 class="community-header__title title">Be Part of a Growing International Community</h2>
@@ -322,7 +324,7 @@
                         </div>
 
                         <div class="community-content__persone">
-                            <img src="img/community/community-icon-1.png" alt="" />
+                            <img src="img/community/community-icon-1.png" alt="person photo" />
                             <span>David Beckham</span>
                         </div>
                     </div>
@@ -334,7 +336,7 @@
                         </div>
 
                         <div class="community-content__persone">
-                            <img src="img/community/community-icon-2.png" alt="" />
+                            <img src="img/community/community-icon-2.png" alt="person photo" />
                             <span>Bryan Beller</span>
                         </div>
                     </div>
@@ -347,18 +349,27 @@
 
         <section class="clients">
             <div class="container">
+                <h2 class="clients__title title">Our clients</h2>
                 <ul class="clients__list">
-                    <li class="clients__item"><img src="img/clients/brand-1.png" alt=""></li>
-                    <li class="clients__item"><img src="img/clients/brand-2.png" alt=""></li>
-                    <li class="clients__item"><img src="img/clients/brand-3.png" alt=""></li>
-                    <li class="clients__item"><img src="img/clients/brand-4.png" alt=""></li>
-                    <li class="clients__item"><img src="img/clients/brand-5.png" alt=""></li>
-                    <li class="clients__item"><img src="img/clients/brand-6.png" alt=""></li>
+                    <li class="clients__item"><img src="img/clients/brand-1.png" alt="mountain logo"></li>
+                    <li class="clients__item"><img src="img/clients/brand-2.png" alt="rebels logo"></li>
+                    <li class="clients__item"><img src="img/clients/brand-3.png" alt="hipster logo"></li>
+                    <li class="clients__item"><img src="img/clients/brand-4.png" alt="henderson logo"></li>
+                    <li class="clients__item"><img src="img/clients/brand-5.png" alt="smokeville logo"></li>
+                    <li class="clients__item"><img src="img/clients/brand-6.png" alt="young rebels logo"></li>
                 </ul>
             </div> <!--/container-->
         </section> <!--/clients-->
-
     </main>
+
+
+    <!--footer-->
+
+    <footer class="footer">
+        <span class="footer__copyright">Copyright © 2012 - 2020 Cssauthor.com</span>
+    </footer> <!--/footer-->
+
+    
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>

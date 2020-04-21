@@ -28,7 +28,6 @@
     background-color: $blue-ligth;
 }
 
-
 .find-item__img {
     margin-right: 36px;
 
@@ -57,5 +56,19 @@
 }
 
 .find-item__btn {
+    color: $white;
     background-color: $blue;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $blue-dark;
+    }
+}
+
+.btn--green {
+    background-color: $green;
+
+    &:hover {
+        background-color: $green-dark;
+    }
 }

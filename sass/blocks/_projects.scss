@@ -43,20 +43,6 @@
     }
 }
 
-.find-item__btn {
-    color: $gray;
-    background-color: transparent;
-    border: 1px solid $gray;
-    transition: background-color .2s linear;
-
-    &:hover {
-        color: $white;
-        background-color: $blue;
-        border: 0;
-        padding: 19px 26px;
-    }
-}
-
 // projects-content
 
 .projects-content {

@@ -25,26 +25,6 @@
     align-items: center;  
 }
 
-.header-login__btn {
-    display: inline-block;
-    width: 100px;
-    font-size: 14px;
-    text-align: center;
-    background-color: $green;
-    border-radius: 20px;
-    padding: 9px 0;
-    transition: .2s background-color linear;
-
-    &:hover {
-        background-color: $green-dark;
-    }
-
-    @media (max-width: 992px) {
-        margin-left: auto;
-        margin-right: 20px;
-    }
-}
-
 .nav {
     @media (max-width: 992px) {
         position: fixed;
@@ -63,18 +43,14 @@
         font-size: 18px;
         font-weight: bold;
         width: 100%;
-        top: 80px;
+        top: 0;
         left: 0;
         opacity: 1;
         background-color: $white;
     }
-
-    @media (max-width: 576px) {
-        top: 53px;
-    }
 }
 
-.nav--active.nav__link {
+.nav--active .nav__link {
     position: relative;
     color: $gray;
 
@@ -133,13 +109,13 @@
 
 .nav__link {
     position: relative;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     color: $gray;
-    transition: color .3s linear;
+    transition: color .2s linear;
 
     &:hover {
-        color: $black;
+        color: $green;
     }
 
     @media (max-width: 992px) {
@@ -149,8 +125,24 @@
     }
 }
 
-.nav__link.nav__link--active {
-    color: $white;
+.header-login__btn {
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    background-color: $green;
+    border-radius: 20px;
+    padding: 9px 0;
+    transition: .2s background-color linear;
+
+    &:hover {
+        background-color: $green-dark;
+    }
+
+    @media (max-width: 992px) {
+        margin-left: auto;
+        margin-right: 60px;
+    }
 }
 
 .header-login__btn > span {
@@ -164,7 +156,21 @@
 
     @media (max-width: 992px) {
         display: block;
+        position: absolute;
+        top: 28px;
+        right: 15px;
     }
+
+    @media (max-width: 576px) {
+        top: 16px;
+    }
+}
+
+.nav-toggle--active {
+    display: block;
+    position: fixed;
+    right: 15px;
+    z-index: 100;
 }
 
 .nav-toggle__item {
@@ -175,6 +181,7 @@
         height: 4px;
         font-size: 0;
         background-color: $gray-dark;
+        
     
         &::before,
         &::after {
@@ -195,6 +202,7 @@
 }
 
 .nav-toggle--active .nav-toggle__item {
+
     @media (max-width: 992px) {
         background-color: transparent;
 
