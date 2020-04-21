@@ -15,7 +15,7 @@
 .find-item {
     display: flex;
     align-items: center;
-    background-color: $gray;
+    background-color: $gray-light;
     padding: 46px 66px 70px;
 
     @media (max-width: 576px) {
@@ -52,17 +52,10 @@
 
 .find-item__text {
     font-size: 18px;
-    color: $gray-dark;
+    color: $gray;
     margin-bottom: 40px;
 }
 
 .find-item__btn {
-    color: $white;
     background-color: $blue;
-    padding: 18px 25px;
-    border-radius: 8px;
-
-    @media (max-width: 576px) {
-        padding: 14px 14px;
-    }
 }

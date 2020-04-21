@@ -25,6 +25,26 @@
     align-items: center;  
 }
 
+.header-login__btn {
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    background-color: $green;
+    border-radius: 20px;
+    padding: 9px 0;
+    transition: .2s background-color linear;
+
+    &:hover {
+        background-color: $green-dark;
+    }
+
+    @media (max-width: 992px) {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
 .nav {
     @media (max-width: 992px) {
         position: fixed;
@@ -56,7 +76,7 @@
 
 .nav--active.nav__link {
     position: relative;
-    color: $gray-light;
+    color: $gray;
 
     &::before {
         content: "";
@@ -65,7 +85,7 @@
         width: 16px;
         height: 1px;
         margin-bottom: 20px;
-        background-color: $gray-light;
+        background-color: $gray;
     }
 }
 
@@ -73,7 +93,7 @@
 
     @media (max-width: 992px) {
         position: relative;
-        color: $gray-light;
+        color: $gray;
 
         &::before {
             content: "";
@@ -82,7 +102,7 @@
             width: 16px;
             height: 1px;
             margin-bottom: 20px;
-            background-color: $gray-light;
+            background-color: $gray;
         }
     }
 }
@@ -115,7 +135,7 @@
     position: relative;
     font-weight: 500;
     text-transform: uppercase;
-    color: $gray-light;
+    color: $gray;
     transition: color .3s linear;
 
     &:hover {
@@ -140,6 +160,7 @@
 .nav-toggle {
     display: none;
     background-color: transparent;
+    padding: 10px 0;
 
     @media (max-width: 992px) {
         display: block;
@@ -191,6 +212,8 @@
     }
 }
 
+// popup
+
 .popup-overlay {
     position: absolute;
 	width: 100%;
@@ -228,12 +251,24 @@
     display: block;
     padding: 15px;
     margin-bottom: 20px;
+    border: thin solid #c5c5c5;
 }
 
 .popup__btn {
-    padding: 12px;
-    margin-right: 20px;
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
     color: $white;
+    background-color: $green;
+    border-radius: 20px;
+    padding: 9px 0;
+    margin-right: 20px;
+    transition: .2s background-color linear;
+
+    &:hover {
+        background-color: $green-dark;
+    }
 
     @media (max-width: 567px) {
         margin-right: 10px;
@@ -247,7 +282,7 @@
 
 .popup__btn-wrapper > a {
     display: inline-block;
-    color: $gray-light;
+    color: $gray;
     text-decoration: underline;
 
     &:hover {

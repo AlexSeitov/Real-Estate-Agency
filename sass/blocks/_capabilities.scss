@@ -47,7 +47,7 @@
         height: 1px;
         position: absolute;
         bottom: -14px;
-        background-color: $gray-light;
+        background-color: $gray;
     }
 
     @media (max-width: 576px) {
@@ -59,7 +59,7 @@
 .tabs-item {
     font-size: 32px;
     font-weight: 300;
-    color: $gray-light;
+    color: $gray;
     position: relative;
 }
 
@@ -71,7 +71,7 @@
         height: 1px;
         position: absolute;
         bottom: -14px;
-        background-color: $green-light;
+        background-color: $green;
     }
 }
 

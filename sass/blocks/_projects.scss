@@ -1,0 +1,227 @@
+.projects {
+    padding: 80px 0;
+
+    @media (max-width: 576px) {
+        padding: 40px 0 20px;
+    }
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    
+    @media (max-width: 992px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.projects-header__column {
+    max-width: 680px;
+
+    @media (max-width: 992px) {
+        max-width: 80%;
+        text-align: center;
+    }
+}
+
+.projects-header__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: $gray-dark;
+    margin-bottom: 20px;
+}
+
+.projects-header__text {
+    color: $gray;
+    font-size: 18px;
+
+    @media (max-width: 990px) {
+        margin-bottom: 40px;
+    }
+}
+
+.find-item__btn {
+    color: $gray;
+    background-color: transparent;
+    border: 1px solid $gray;
+    transition: background-color .2s linear;
+
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        border: 0;
+        padding: 19px 26px;
+    }
+}
+
+// projects-content
+
+.projects-content {
+    display: flex;
+    
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.projects-content__item {
+    width: 33.3333%;
+    border: 1px solid $gray-light;
+    background-color: $white-gray;
+
+    @media (max-width: 767px) {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+.projects-content__item:not(:first-child) {
+    margin-left: 15px;
+
+    @media (max-width: 767px) {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+.projects-content__img {
+    position: relative;
+    text-align: center;
+    transition: all .2s linear;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 1px 1px $green,
+                    2px 2px $green,
+                    3px 3px $green,
+                    4px 4px $green,
+                    5px 5px $green,
+                    6px 6px $green,
+                    7px 7px $green;
+                    transform: translateX(-7px);
+    }
+}
+
+.projects-content__img img {
+    display: block;
+    width: 100%;
+}
+
+.projects-content__btn {
+    position: absolute;
+    top: 72%;
+    left: 46%;
+    width: 140px;
+    height: 25px;
+    transform: translateX(200px);
+    transition: transform .2s linear;
+
+    @media (max-width: 992px) {
+        top: 75%;
+        left: 44%;
+        transform: translateX(0px);
+    }
+
+    @media (max-width: 767px) {
+        top: 82%;
+        left: 70%;
+        transform: translate(-48%, -30%);
+    }
+}
+
+.projects-content__btn a {
+    padding: 12px 8px;
+    background-color: $blue;
+}
+
+.projects-content__img:hover .projects-content__btn {
+    transform: translateX(0px);
+} 
+
+.projects-content__info {
+    padding: 28px 24px;
+}
+
+.projects-content__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.projects-content__text {
+    color: $gray;
+    margin-bottom: 20px;
+}
+
+.projects-content__progress {
+    position: relative;
+    width: 100%;
+    height: 14px;
+    font-size: 0;
+    background-color: $gray-light;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 0%;
+        height: 14px;
+        background-color: $green;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+.progress-one::after {
+    width: 30%;
+}
+
+.progress-two::after {
+    width: 60%;
+}
+
+.progress-three::after {
+    width: 90%;
+}
+
+.progress-info {
+    font-weight: 600;
+    color: $gray;
+    margin-bottom: 20px;
+}
+
+.projects-content__details a {
+    font-size: 18px;
+    font-weight: 600;
+    color: $gray;
+    transition: all .2s linear;
+
+    &:hover {
+        color: $black;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: -30px;
+        display: block;
+        width: 12px;
+        height: 17px;
+        border: 10px solid transparent;
+        border-left: 10px solid $green;
+    }
+}
+
+.projects-content__details {
+    position: relative;
+    text-align: right;
+    margin-right: 50px;  
+}

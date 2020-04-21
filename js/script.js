@@ -39,6 +39,7 @@ $(function() {
         autoplayTimeout:3000
     });
 
+    // set background-image
 
     $('.set-bg').each(function () {
         var bg = $(this).data('setbg');
@@ -48,8 +49,10 @@ $(function() {
     // tabs
 
     $('.tabs__block').not(':first').hide();
-    $('.tabs .tabs-item').click(function() {
-        $('.tabs .tabs-item').removeClass('active').eq($(this).index()).addClass('active');
+
+    $('.tabs-item').click(function(e) {
+        e.preventDefault(); 
+        $('.tabs-item').removeClass('active').eq($(this).index()).addClass('active');
         $('.tabs__block').hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass('active');
 });
