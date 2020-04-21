@@ -1120,4 +1120,141 @@ button {
   text-align: right;
   margin-right: 50px;
 }
+
+.community {
+  background: url(../img/community/community-bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 60px 0;
+}
+
+.community::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #666;
+  opacity: 0.06;
+  z-index: 0;
+}
+
+@media (max-width: 576px) {
+  .community {
+    padding: 30px 0px 0px;
+  }
+}
+
+.community__wrapper {
+  position: relative;
+  z-index: 100;
+}
+
+.community-header {
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+@media (max-width: 576px) {
+  .community-header {
+    margin-bottom: 40px;
+  }
+}
+
+.community-header__title {
+  color: #99c50a;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 576px) {
+  .community-header__title {
+    margin-bottom: 30px;
+  }
+}
+
+.community-header__text {
+  font-size: 18px;
+  color: #666;
+}
+
+.community-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .community-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .community-content__item {
+    margin-bottom: 40px;
+  }
+}
+
+.community-content__comment {
+  position: relative;
+  max-width: 400px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 26px 36px;
+  margin-bottom: 36px;
+}
+
+.community-content__comment:after {
+  content: "";
+  display: block;
+  width: 30px;
+  position: absolute;
+  bottom: -14px;
+  border: 15px solid transparent;
+  border-right: 15px solid #f9f9f9;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.community-content__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #99c50a;
+  margin-bottom: 24px;
+}
+
+.community-content__text {
+  color: #666;
+}
+
+.community-content__persone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.community-content__persone img {
+  margin-right: 16px;
+}
+
+.community-content__persone span {
+  font-family: 'Montserrat, sans-serif';
+  font-weight: bold;
+  font-size: 16px;
+  color: #414141;
+}
 /*# sourceMappingURL=style.css.map */

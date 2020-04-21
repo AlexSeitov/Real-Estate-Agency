@@ -1,0 +1,114 @@
+.community {
+    background: url(../img/community/community-bg.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 60px 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $gray;
+        opacity: 0.06;
+        z-index: 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 30px 0px 0px;
+    }
+}
+
+.community__wrapper {
+    position: relative;
+    z-index: 100;
+}
+
+.community-header {
+    text-align: center;
+    margin-bottom: 96px;
+
+    @media (max-width: 576px) {
+        margin-bottom: 40px;
+    }
+}
+
+.community-header__title {
+    color: $green;
+    margin-bottom: 48px;
+
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+}
+
+.community-header__text {
+    font-size: 18px;
+    color:  $gray;
+}
+
+.community-content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.community-content__item {
+    @media (max-width: 992px) {
+        margin-bottom: 40px;
+    }
+}
+
+.community-content__comment {
+    position: relative;
+    max-width: 400px;
+    text-align: center;
+    background-color: $white-gray;
+    border-radius: 10px;
+    padding: 26px 36px;
+    margin-bottom: 36px;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 30px;
+        position: absolute;
+        bottom: -14px;
+        border: 15px solid transparent;
+        border-right: 15px solid $white-gray;
+        transform: rotate(45deg);
+    }
+}
+
+.community-content__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: $green;
+    margin-bottom: 24px;
+}
+
+.community-content__text {
+    color: $gray;
+}
+
+.community-content__persone {
+    display: flex;
+    align-items: center;
+}
+
+.community-content__persone img {
+    margin-right: 16px;
+}
+
+.community-content__persone span {
+    font-family: 'Montserrat, sans-serif';
+    font-weight: bold;
+    font-size: 16px;
+    color: $gray-dark;
+}

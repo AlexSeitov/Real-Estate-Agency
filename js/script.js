@@ -55,4 +55,22 @@ $(function() {
         $('.tabs-item').removeClass('active').eq($(this).index()).addClass('active');
         $('.tabs__block').hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass('active');
+
+
+
+    // scrollToTop
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 600) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+    
 });
